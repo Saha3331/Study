@@ -97,7 +97,7 @@ public class Main {
 
             while (i <= depositPeriodIn) {
                 total = total + total * 7 / 1000;
-                total = total + monthlyAmount;
+                total = total + monthsInYear;
                 i++;
                 if (i % 6 != 0) {
                     System.out.print(" ");
@@ -124,11 +124,14 @@ public class Main {
             int year = 2024;
             int firstTimePeriod = year - 200;
             int secondTimePeriod = year + 100;
-
-            for (int i = firstTimePeriod; i >= firstTimePeriod & i <= secondTimePeriod; i = i + 79) {
-                System.out.println(i);
+            int nollePeriod = 0;
+            int rate = 79;
+            while (nollePeriod < secondTimePeriod) {
+                if (nollePeriod > firstTimePeriod) {
+                    System.out.println(nollePeriod);
+                }
+                nollePeriod += rate;
             }
-
         }
     }
 }
