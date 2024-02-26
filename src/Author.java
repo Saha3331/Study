@@ -13,7 +13,6 @@ public class Author {
     public String toString() {
         return "Author{" +
                 "fistName='" + fistName + '\'' +
-                ", lastName='" + lastName + '\''
-                ;
+                ", lastName='" + lastName;
     }
 }

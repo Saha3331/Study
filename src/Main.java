@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Author author = new Author();
         author.lastName = "Иванов";
-        author.fistName = "Иван";
+        author.fistName = "Иванн";
         System.out.println(author);
         Book book = new Book("Книга",2022,author);
         System.out.println(book);
